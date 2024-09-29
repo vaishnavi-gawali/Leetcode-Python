@@ -40,6 +40,5 @@ SOLUTION:
 import pandas as pd
 
 def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
-    df1=pd.DataFrame(products)
-    df1['quantity'].fillna(0,inplace=True)
-    return df1
+    products['quantity'].fillna(0,inplace=True)
+    return products
