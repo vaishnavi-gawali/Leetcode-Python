@@ -48,6 +48,5 @@ SOLUTION:
 import pandas as pd
 
 def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
-        df1 = pd.DataFrame(employees)
-        df1['bonus'] = df1['salary']* 2
-        return df1
+        employees['bonus'] = employees['salary']* 2
+        return employees
