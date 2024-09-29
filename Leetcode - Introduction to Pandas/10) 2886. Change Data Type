@@ -41,14 +41,12 @@ SOLUTION 1:
 import pandas as pd
 
 def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
-    df1 = pd.DataFrame(students)
-    df1['grade'] = df1['grade'].astype(int)
-    return df1 
+    students['grade'] = students['grade'].astype(int)
+    return students
 
 SOLUTION 2:
 import pandas as pd
 
 def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
-    df1 = pd.DataFrame(students)
-    df1['grade'] = pd.to_numeric(df1['grade'], downcast='integer')
-    return df1 
+    students['grade'] = pd.to_numeric(students['grade'], downcast='integer')
+    return students
