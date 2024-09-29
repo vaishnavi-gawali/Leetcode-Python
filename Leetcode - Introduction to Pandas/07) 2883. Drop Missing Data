@@ -43,6 +43,5 @@ SOLUTION:
 import pandas as pd
 
 def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
-        df1 = pd.DataFrame(students)
-        df1.dropna(subset=['name'],inplace=True)
-        return df1
+        students.dropna(subset=['name'],inplace=True)
+        return students
