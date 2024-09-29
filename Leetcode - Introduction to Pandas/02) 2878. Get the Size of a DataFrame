@@ -1,5 +1,6 @@
 2878. Get the Size of a DataFrame
 
+
 DataFrame players:
 +-------------+--------+
 | Column Name | Type   |
