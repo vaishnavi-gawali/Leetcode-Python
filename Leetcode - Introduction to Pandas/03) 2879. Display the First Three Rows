@@ -43,5 +43,4 @@ SOLUTION:
 import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-    df1 = employees.head(3)
-    return df1
+    return employees.head(3)
