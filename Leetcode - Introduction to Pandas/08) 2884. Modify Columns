@@ -43,6 +43,5 @@ SOLUTION:
 import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-    df1 = pd.DataFrame(employees)
-    df1['salary'] = df1['salary'] * 2
-    return d
+    employees['salary'] = employees['salary'] * 2
+    return employees
